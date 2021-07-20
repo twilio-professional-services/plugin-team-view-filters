@@ -15,6 +15,14 @@ The Twilio Flex Team View allows for real-time monitoring of Flex agents and sup
 ### Autocomplete Multi-Select Filter
 ![Autocomplete Multi-Select Filter](images/autocomplete-multi-select-filter.png)
 
+## Requirements
+
+### Team View Filters
+
+To use this plugin, you should enable the Team View Filters feature on your Flex instance, and you can do that on the [pre-release features page](https://flex.twilio.com/admin/features/). On the Feature Settings page, go to the _Pilot_ tab, and enable the _Advanced Teams Views Filters_.
+
+![Enable Advanced Teams Views Filters](images/enable-advanced-teams-views-fitlers.gif)
+
 ## Setup
 
 Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com) installed.

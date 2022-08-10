@@ -4,7 +4,7 @@ import { MultiSelectFilter, MultiSelectFilterLabel } from '../components/MultiSe
 
 const teams = [
   'Blue Team',
-  'Twilio',
+  'Red Team',
   'Gold Team',
   'VIP Team',
   'Orange Team',

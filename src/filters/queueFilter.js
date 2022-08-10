@@ -1,11 +1,11 @@
 const options = [
-  'energiaWpp',
-  'energiaCadastrados',
-  'energiaNaoCadastrados'
+  'Sales',
+  'Support',
+  'Returns'
 ];
 
 export const queueFilter = () => ({
-  id: 'data.attributes.routing.skills',
+  id: 'data.attributes.queues',
   title: 'Queues',
   fieldName: 'queues',
   type: 'multiValue',

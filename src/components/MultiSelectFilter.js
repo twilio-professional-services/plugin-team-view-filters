@@ -1,5 +1,5 @@
+import styled from '@emotion/styled';
 import React from 'react';
-import styled from 'react-emotion';
 import Select from 'react-select';
 
 // Setting height to the max allowed for any individual filter

@@ -13,7 +13,7 @@ import {
 const PLUGIN_NAME = 'TeamViewFiltersPlugin';
 
 export default class TeamViewFiltersPlugin extends FlexPlugin {
-  constructor() {
+  constructor () {
     super(PLUGIN_NAME);
   }
 
@@ -25,19 +25,25 @@ export default class TeamViewFiltersPlugin extends FlexPlugin {
    * @param manager { import('@twilio/flex-ui').Manager }
    */
   init(flex, manager) {
-    manager.updateConfig({
-      componentProps: {
-        TeamsView: {
-          filters: [
-            TeamsView.activitiesFilter,
-            extensionFilter,
-            queueFilter,
-            companyFilter,
-            departmentFilter,
-            teamFilter
-          ]
-        }
-      }
-    });
+    flex.TeamsView.defaultProps.filters = [TeamsView.activitiesFilter,
+      extensionFilter,
+      queueFilter,
+      companyFilter,
+      departmentFilter,
+      teamFilter]
+    // manager.updateConfig({
+    //   componentProps: {
+    //     TeamsView: {
+    //       filters: [
+    //         TeamsView.activitiesFilter,
+    //         extensionFilter,
+    //         queueFilter,
+    //         companyFilter,
+    //         departmentFilter,
+    //         teamFilter
+    //       ]
+    //     }
+    //   }
+    // });
   }
 }

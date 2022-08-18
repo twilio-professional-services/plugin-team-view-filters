@@ -1,11 +1,17 @@
 const options = [
-  'Sales',
-  'Support',
-  'Returns'
+  'energiaCadastrados',
+  'energiaNaoCadastrados',
+  'energiaWpp',
+  'revendaAviacao',
+  'revendaVip',
+  'revendaCombustiveis',
+  'revendaShellbox',
+  'revendaEngenharia',
+  'revendaVoceconquista'
 ];
 
 export const queueFilter = () => ({
-  id: 'data.attributes.queues',
+  id: 'data.attributes.routing.skills',
   title: 'Queues',
   fieldName: 'queues',
   type: 'multiValue',

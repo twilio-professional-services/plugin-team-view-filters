@@ -25,25 +25,13 @@ export default class TeamViewFiltersPlugin extends FlexPlugin {
    * @param manager { import('@twilio/flex-ui').Manager }
    */
   init(flex, manager) {
-    flex.TeamsView.defaultProps.filters = [TeamsView.activitiesFilter,
-      extensionFilter,
+    flex.TeamsView.defaultProps.filters = [
+      TeamsView.activitiesFilter,
+      // extensionFilter,
       queueFilter,
-      companyFilter,
-      departmentFilter,
-      teamFilter]
-    // manager.updateConfig({
-    //   componentProps: {
-    //     TeamsView: {
-    //       filters: [
-    //         TeamsView.activitiesFilter,
-    //         extensionFilter,
-    //         queueFilter,
-    //         companyFilter,
-    //         departmentFilter,
-    //         teamFilter
-    //       ]
-    //     }
-    //   }
-    // });
+      // companyFilter,
+      // departmentFilter,
+      // teamFilter
+    ]
   }
 }

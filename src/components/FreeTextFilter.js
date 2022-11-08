@@ -1,6 +1,6 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 
 const FilterContainer = styled('div')`
   margin-left: 16px;
